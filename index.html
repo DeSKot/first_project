@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="wow ">
+    <div class="container">
+      <div class="row head">
+        <div class="col-lg-1">
+          <img src="./svg/Group 11.svg" alt="">
+        </div>
+        <nav class="col-lg-8 offset-lg-3">
+          <a href="#" class="">Главная</a>
+          <a href="#">Галерея</a>
+          <a href="#">Проекты</a>
+          <a href="#">Сертификаты</a>
+          <a href="#">Контакты</a>
+        </nav>
+      </div>
+      <div class="row projects wow animate__animated animate__fadeInUp">
+        <div class="col-lg-4">
+          <div class="row project">
+            <div class="col-lg-12">
+              <h1><span>project</span> </h1>
+              <h1>home</h1>
+              <button class="btn shadow-none previous" onclick="previousSlide()">
+                <img src="./svg/left arrow.svg" alt="">
+              </button>
+              <button class="btn shadow-none next" onclick="nextSlide()">
+                <img src="./svg/right arrow.svg" alt="">
+              </button>
+              <p class="index_img">01 </p>
+              <p class="all_img">02</p>
+              <p class="try"></p>
+              <div class="row_slider">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 img_project">
+          <div class="slider_header">
+            <div class="item">
+              <img src="./img/Rectangle 6.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="./img/Rectangle 6.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="./img/Rectangle 6.jpg" alt="">
+            </div>
+          </div>
+          <button class="btn shadow-none" data-bs-toggle="modal" data-bs-target="#slider_header">Вглянуть <img
+              src="./svg/right arrow.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </header>
+
+  <section class="about wow animate__animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 offset-lg-1">
+          <img src="./img/about1.jpg" alt="">
+          <img src="./img/about3.jpg" alt="" class="move_img">
+        </div>
+        <div class="col-lg-3 offset-lg-1">
+          <img src="./img/about2.jpg" alt="" class="move_img2">
+        </div>
+        <div class="col-lg-4 description">
+          <h1 class="section_name">О компании</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially
+            unchanged.
+          </p>
+          <button class="btn shadow-none" data-bs-toggle="modal" data-bs-target="#read_about">Читать <img
+              src="./svg/right arrow.svg" alt="">
+          </button>
+          <!-- Modal ABOUT COMPANY -->
+
+          <div class="modal fade" id="read_about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal_for_read_about">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title section_name" id="exampleModalLabel">О компании</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam saepe illo consequuntur, beatae, rem
+                    tempore, sapiente minima illum numquam fugiat deserunt veniam explicabo laudantium vel voluptatem
+                    eos accusantium facere vero.<br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatem, repudiandae in vitae
+                    optio aperiam perspiciatis veritatis dolorem recusandae explicabo facilis provident veniam assumenda
+                    sunt architecto neque repellendus officiis deleniti!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat asperiores ipsam adipisci!
+                    Quibusdam tenetur non eum, deserunt assumenda soluta cupiditate et odit, omnis ab nesciunt dolores,
+                    error quod veniam blanditiis!
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button data-bs-dismiss="modal">Закрыть <img src="./svg/right arrow.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="task wow animate__animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="section_name">Основные задачи</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1">
+          <h1 class="number">1</h1>
+        </div>
+        <div class="col-lg-3">
+          <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+        </div>
+        <div class="col-lg-1 offset-lg-2">
+          <h1 class="number">2</h1>
+        </div>
+        <div class="col-lg-5 move_p">
+          <p>Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового
+            оборудования и
+            усиленной рекламы на рынке</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our_prjects wow animate__animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="section_name">Наши проекты</h1>
+        </div>
+      </div>
+      <div class="exemple_project">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./img/our projects1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img src="./img/our projects1.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./img/our projects2.jpg" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img src="./img/our projects3.jpg" alt="" class="move_img">
+          </div>
+          <div class="col-lg-4">
+            <img src="./img/our projects4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 offset-lg-9">
+          <button class="btn shadow-none" data-bs-toggle="modal" data-bs-target="#all_project">Все проекты <img
+              src="./svg/right arrow_white.svg" alt=""></button>
+        </div>
+      </div>
+      <!-- Modal for all_project -->
+      <div class="modal fade" id="all_project" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title section_name" id="exampleModalLabel">Все проекты</h5>
+            </div>
+            <div class="modal-body">
+              <div class="slider">
+                <div class="slider_idem"><img src="./img/our projects1.jpg" alt=""></div>
+                <div class="slider_idem"><img src="./img/our projects2.jpg" alt=""></div>
+                <div class="slider_idem"><img src="./img/our projects3.jpg" alt=""></div>
+                <div class="slider_idem"><img src="./img/our projects4.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact_us wow animate__animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="section_name">Связаться с нами</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <form action="./php/app.php" onsubmit='return validFunction()' method="POST">
+            <input type="text" class="form-control shadow-none name" placeholder="Имя" name='name'>
+            <input type="tel" class="form-control shadow-none required telefon" placeholder="Телефон*" name="tel">
+            <input type="email" class="form-control shadow-none required email" placeholder="E-mail*" name="email">
+            <input type="text" class="form-control shadow-none service" placeholder="Интересующий товар/услуга"
+              name="service">
+            <div class="form-floating">
+              <textarea class="form-control shadow-none required message" placeholder="Leave a comment here"
+                id="floatingTextarea2" style="height: 100px" name="message"></textarea>
+              <label for="floatingTextarea2">Сообщение</label>
+            </div>
+            <button class="btn  shadow-none btn-contack" type="submit">Отправить<img src="./svg/right arrow_white.svg"
+                alt=""></button>
+            <div class="form-check checkbox">
+              <input class="form-check-input shadow-none checkboxInput" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Отправляя заявку Вы соглашаетесь
+                с политикой
+                конфиденциальности
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-8">
+          <img src="./img/contact_us_img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="wow animate__animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 logo">
+          <img src="./svg/logo_white.svg" alt="">
+        </div>
+        <div class="col-lg-2">
+          <h4>Информация</h4>
+          <ul>
+            <li>Главная</li>
+            <li>Галерея</li>
+            <li>Проекты</li>
+            <li>Сертификаты</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 offset-lg-1">
+          <h4 class="information">Контакты</h4>
+          <div class="row line">
+            <img src="./svg/map.svg" alt="#" class="col-lg-2 img-svg">
+            <a href="https://goo.gl/maps/69TRwDuPXLnLbjjr9" class="col-lg-10">100000, Республика Казахстан,
+              г. Караганда, ул. Телевизионная 10</a>
+          </div>
+          <div class="row line">
+            <img src="./svg/tel.svg" alt="#" class="col-lg-1 img-svg">
+            <a href="tel:+380000000000" class="col-lg-10">+38 (000) 000 00 00</a>
+          </div>
+          <div class="row line">
+            <img src="./svg/email.svg" alt="#" class="col-lg-1 img-svg">
+            <p class="col-lg-10">mail@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-lg-3 offset-lg-1 social">
+          <h4>Социальные сети</h4>
+          <div class="row">
+            <div class="col-lg-3">
+              <a href="https://www.facebook.com/"><img src="./svg/facebook.svg" alt="#"></a>
+            </div>
+            <div class="col-lg-3">
+              <a href="https://twitter.com/"><img src=".//svg/twich.svg" alt="#"></a>
+            </div>
+            <div class="col-lg-3">
+              <a href="https://ru.linkedin.com/"><img src="./svg/Linked In.svg" alt="#"></a>
+            </div>
+            <div class="col-lg-3">
+              <a href="https://www.pinterest.ru/"><img src="./svg/pininterest.svg" alt="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

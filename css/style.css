@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "TT Hoves";
+  src: local("TT Hoves Regular"), local("TT-Hoves-Regular"), url("../fonts/TTHoves-Regular.woff2") format("woff2"), url("../fonts//TTHoves-Regular.woff") format("woff"), url("../fonts/TTHoves-Regular.woff2") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Hoves-H";
+  src: local("TT Hoves Hairline"), local("TT-Hoves-Hairline"), url("../fonts/TTHoves-Hairline.woff2") format("woff2"), url("../fonts/TTHoves-Hairline.woff") format("woff"), url("../fonts/TTHoves-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "San Francisco Pro";
+  src: local("San Francisco Pro Display Bold"), local("San-Francisco-Pro-Display-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "TT Hoves";
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 45px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+button:focus {
+  box-shadow: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section_name {
+  font-weight: 300;
+  font-size: 64px;
+  color: #BDBDBD;
+  letter-spacing: 2px;
+}
+
+/*                                              ANIMATION                            */
+/*                                                 STYLES                             */
+/*==============================================HEADER=================================*/
+header .head nav {
+  position: relative;
+  bottom: 20px;
+  margin-left: 380px;
+  margin-bottom: 48px;
+}
+header .head nav a {
+  margin-left: 60px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: start;
+  transition: all 0.2s ease;
+}
+header .head nav a:hover {
+  border-top: 1px solid black;
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+}
+header .projects .project {
+  margin-top: 365px;
+}
+header .projects .project h1 {
+  font-family: "San Francisco Pro";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 64px;
+}
+header .projects .project h1 span {
+  position: relative;
+  top: 4px;
+  font-family: "TT Hoves";
+  font-weight: 300;
+  margin-top: 365px;
+  opacity: 50%;
+}
+header .projects .project button {
+  margin-top: 90px;
+  width: 53px;
+  height: 53px;
+  margin-right: 26px;
+  border: 1px solid #F2F2F2;
+  border-radius: 0%;
+}
+header .projects .project button:hover {
+  background: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+}
+header .projects .project .row_slider {
+  /* Line 3 */
+  position: relative;
+  bottom: 89px;
+  left: 46px;
+  width: 43.82px;
+  height: 0px;
+  /* Gray 5 */
+  border: 2px solid #E0E0E0;
+  transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+}
+header .projects .project .index_img {
+  font-size: 24px;
+  margin-top: 94px;
+  font-size: 24px;
+  color: #BDBDBD;
+}
+header .projects .project .all_img {
+  bottom: 53px;
+  font-size: 24px;
+  color: #BDBDBD;
+  position: relative;
+  left: 104px;
+}
+header .projects .img_project .slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  /* Устанавливаем и изменяем степень прозрачности: */
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header .projects .img_project button {
+  position: relative;
+  bottom: 80px;
+  background: white;
+  border-radius: 0%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 30px 86px 30px 50px;
+}
+header .projects .img_project button img {
+  position: relative;
+  left: 15px;
+}
+header .projects .img_project button:hover {
+  background: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+}
+
+/*=============================================ABOUT==================================*/
+section.about .container {
+  padding: 30px 0;
+  background-color: #FBFBFB;
+}
+section.about .description {
+  position: relative;
+  left: 5px;
+}
+section.about p {
+  font-family: "TT Hoves";
+  color: black;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+}
+section.about .move_img {
+  position: relative;
+  top: 60px;
+}
+section.about .move_img2 {
+  position: relative;
+  top: 30px;
+}
+section.about button {
+  position: relative;
+  bottom: -5px;
+  background: white;
+  border-radius: 0%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 30px 86px 30px 50px;
+}
+section.about button img {
+  position: relative;
+  left: 15px;
+}
+section.about button:hover {
+  background: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+}
+section.about .modal_for_read_about h3 {
+  margin: 0 auto;
+}
+
+/*==============================================TASK===================================*/
+section.task {
+  margin-top: 150px;
+}
+section.task .section_name {
+  margin-bottom: 60px;
+}
+section.task .number {
+  position: relative;
+  bottom: 50px;
+  font-family: "San Francisco Pro";
+  font-weight: 900;
+  font-size: 200px;
+  color: #F2F2F2;
+}
+section.task p {
+  font-size: 22px;
+  line-height: 36px;
+  margin-left: 5px;
+}
+section.task .move_p {
+  position: relative;
+  left: 30px;
+}
+
+/*======================================OUR_PROJECT===================================*/
+section.our_prjects .exemple_project .move_img {
+  position: relative;
+  right: 80px;
+}
+section.our_prjects .exemple_project img {
+  margin: 5px 10px;
+  z-index: 1;
+  transition: 1s ease all;
+}
+section.our_prjects .exemple_project img:hover {
+  filter: grayscale(0.5) blur(10px);
+}
+section.our_prjects button {
+  color: white;
+  position: relative;
+  bottom: -25px;
+  background: #333333;
+  border-radius: 0%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 30px 86px 30px 50px;
+}
+section.our_prjects button:hover {
+  background: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+}
+section.our_prjects .modal .slider {
+  position: relative;
+}
+section.our_prjects .modal .slider button {
+  position: absolute;
+  top: 126px;
+  right: 10px;
+  padding: 5px;
+  width: 29px;
+  height: 40px;
+  font-size: 0%;
+}
+section.our_prjects .modal .slider .slick-prev {
+  position: absolute;
+  left: 5px;
+}
+section.our_prjects .modal .slider button:focus {
+  background-color: #BDBDBD;
+}
+section.our_prjects .modal .slider button:hover {
+  background-color: #BDBDBD;
+  border: 2px solid black;
+}
+section.our_prjects .modal .slider img {
+  margin: 0 auto;
+}
+
+/*=====================================CONTACT_US======================================*/
+section.contact_us {
+  margin-top: 125px;
+}
+section.contact_us input, section.contact_us textarea {
+  margin: 10px;
+  background-color: #F3F3F3;
+}
+section.contact_us input:invalid {
+  border: 2px dashed red;
+}
+section.contact_us input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+section.contact_us textarea:invalid {
+  border: 2px dashed red;
+}
+section.contact_us textarea:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+section.contact_us label {
+  opacity: 90%;
+}
+section.contact_us .checkbox {
+  position: relative;
+  bottom: 110px;
+  font-size: 14px;
+  left: 10px;
+}
+section.contact_us .checkbox input {
+  position: relative;
+  top: 42px;
+}
+section.contact_us .error {
+  color: red;
+  margin: 5px 10px;
+  font-size: 14px;
+}
+section.contact_us button {
+  color: white;
+  position: relative;
+  bottom: -63px;
+  background: #333333;
+  border-radius: 0%;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 30px 86px 30px 50px;
+}
+section.contact_us button img {
+  position: relative;
+  left: 15px;
+}
+section.contact_us button:hover {
+  background: #F9F9F9;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+}
+section.contact_us label {
+  font-size: 14px;
+  margin: 0 21px;
+}
+
+/*======================================FOOTER=========================================*/
+footer {
+  padding: 58px 0;
+  color: #FFFFFF;
+  margin-top: 268px;
+  background: #2C2C2C;
+}
+footer h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer li {
+  position: relative;
+  right: 32px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 500;
+}
+footer p {
+  font-weight: 500;
+  font-size: 14px;
+}
+footer a {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: rosybrown;
+}
+footer .img-svg {
+  width: 40px;
+  height: 16px;
+}
+footer .line {
+  margin-top: 33px;
+}
+footer .social h4 {
+  margin-bottom: 26px;
+}
+
+/*# sourceMappingURL=style.css.map */
